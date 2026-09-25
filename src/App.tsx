@@ -135,6 +135,7 @@ const AppContent = () => {
           <Route path="about" element={<Navigate to="/about-us" replace />} />
           <Route path="contact" element={<Navigate to="/contact-us" replace />} />
           <Route path="/all-courses" element={<Navigate to="/our-training-programs" replace />} />
+          <Route path="/training-programs" element={<Navigate to="/our-training-programs" replace />} />
           <Route path="/sap-courses" element={<Navigate to="/courses/sap-courses" replace />} />
           <Route path="courses/sap-abap-on-hana-course-online" element={<Navigate to="/courses/sap-abap-course-training" replace />} />
           <Route path="courses/sap-abap-rap" element={<Navigate to="/courses/sap-abap-cds-course-training" replace />} />
