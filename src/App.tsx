@@ -114,7 +114,7 @@ const AppContent = () => {
           <Route index element={<Home />} />
           <Route path="about-us" element={<About />} />
           <Route path="courses" element={<Courses />} />
-          <Route path="/our-training-programs" element={<AllCourses />} />
+          <Route path="/training-programs" element={<AllCourses />} />
           <Route path="courses-menu" element={<AllCourses />} />
           <Route path="courses/sap-courses" element={<SAPCategory />} />
           <Route path="courses/sap-technical" element={<CategoryListing categorySlug="sap-technical" />} />
@@ -129,13 +129,15 @@ const AppContent = () => {
           <Route path="courses/digital-marketing" element={<CategoryListing categorySlug="digital-marketing" />} />
           */}
           <Route path="courses/sap-btp" element={<CategoryListing categorySlug="sap-btp" />} />
+          {/* Commented out per request - Mobile App Development category route
+          <Route path="courses/mobile-app" element={<CategoryListing categorySlug="mobile-app" />} />
+          */}
           <Route path="courses/:id" element={<CourseDetail />} />
 
           {/* Old slugs kept as redirects so existing links/bookmarks/SEO don't break */}
           <Route path="about" element={<Navigate to="/about-us" replace />} />
           <Route path="contact" element={<Navigate to="/contact-us" replace />} />
-          <Route path="/all-courses" element={<Navigate to="/our-training-programs" replace />} />
-          <Route path="/training-programs" element={<Navigate to="/our-training-programs" replace />} />
+          <Route path="/all-courses" element={<Navigate to="/training-programs" replace />} />
           <Route path="/sap-courses" element={<Navigate to="/courses/sap-courses" replace />} />
           <Route path="courses/sap-abap-on-hana-course-online" element={<Navigate to="/courses/sap-abap-course-training" replace />} />
           <Route path="courses/sap-abap-rap" element={<Navigate to="/courses/sap-abap-cds-course-training" replace />} />
